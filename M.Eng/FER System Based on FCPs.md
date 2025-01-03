@@ -148,36 +148,36 @@ y=pos(:,2)
 plot(x,y, 'o')
 ```
 ### Algorithm Breakdown:
-* Load Image:
-  * _Set the path to the image file, read it, and display it._
-* Navigate to Landmarks Directory:
-  * _Set the path to the landmarks file and navigate to it._
-* Import Landmarks:
-  * _Read the landmark positions from a text file._
-* Plot Landmarks on Image:
-  * _Plot the x and y coordinates of the landmarks overlaid on the image._
+* **Load Image:**
+  * Set the path to the image file, read it, and display it.
+* **Navigate to Landmarks Directory:**
+  * Set the path to the landmarks file and navigate to it.
+* **Import Landmarks:**
+  * Read the landmark positions from a text file.
+* **Plot Landmarks on Image:**
+  * Plot the x and y coordinates of the landmarks overlaid on the image.
 
 ### Code Explanation
-* Clear workspace and close all figures:
+* **Clear workspace and close all figures:**
   * clc; clears the command window.
   * clear; clears all variables in the workspace.
   * close all; closes all open figure windows.
-* Set file paths for image and landmarks:
+* **Set file paths for image and landmarks:**
   * path1 is defined as the directory containing the image file. The variable path1 is set to 'extended-cohn-kanade-images\S005\001'.
   * path2 is defined as the directory containing the landmarks data file. It is set to 'Landmarks\S005\001'.
-* Navigate to image directory:
+* **Navigate to image directory:**
   * cd(path1); changes the current working directory to path1 where the image file is located.
-* Read and display the image:
+* **Read and display the image:**
   * img=imread('S005_001_00000001.png'); reads the image file S005_001_00000001.png into the variable img.
   * imshow(img) displays the image in a figure window.
   * hold ensures that subsequent plotting commands add to the current plot (i.e., the image stays visible while landmarks are added).
-* Navigate to landmarks directory:
+* **Navigate to landmarks directory:**
   * cd('..') goes up one level in the directory structure.
   * cd('..') and cd('..') go up two more levels, ultimately reaching the base directory where the landmarks are stored.
-* Load landmarks data:
+* **Load landmarks data:**
   * cd(path2); changes the directory to the path where the landmarks file is located.
   * pos = importdata('S005_001_00000001_landmarks.txt'); imports the landmark coordinates from the S005_001_00000001_landmarks.txt file into the variable pos. This file contains the (x, y) positions of landmarks on the image.
-* Extract and plot the landmark positions:
+* **Extract and plot the landmark positions:**
   * x = pos(:,1); extracts the x-coordinates of the landmarks (the first column of pos).
   * y = pos(:,2); extracts the y-coordinates of the landmarks (the second column of pos).
   * plot(x, y, 'o') plots the landmarks as circles on the image using the extracted x and y coordinates.
