@@ -150,7 +150,7 @@ $$O_{m}=\frac{(y_{8}-y_{5})+(y_{8}-y_{6})}{2}$$
   * Contains detailed annotations for Action Units (AUs) for each sequence.
   * Useful for FACS-based analysis and expression recognition tasks.
 
-## 7. Identifying FCPs For Each Image
+## 7. Identifying 68 FCPs For Each Image
 ### 7.1. Source Code
 ```
 clc;
