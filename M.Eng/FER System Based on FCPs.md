@@ -162,6 +162,25 @@ plot(x,y, 'o')
   * clc; clears the command window.
   * clear; clears all variables in the workspace.
   * close all; closes all open figure windows.
+* Set file paths for image and landmarks:
+  * path1 is defined as the directory containing the image file. The variable path1 is set to 'extended-cohn-kanade-images\S005\001'.
+  * path2 is defined as the directory containing the landmarks data file. It is set to 'Landmarks\S005\001'.
+* Navigate to image directory:
+  * cd(path1); changes the current working directory to path1 where the image file is located.
+* Read and display the image:
+  * img=imread('S005_001_00000001.png'); reads the image file S005_001_00000001.png into the variable img.
+  * imshow(img) displays the image in a figure window.
+  * hold ensures that subsequent plotting commands add to the current plot (i.e., the image stays visible while landmarks are added).
+* Navigate to landmarks directory:
+  * cd('..') goes up one level in the directory structure.
+  * cd('..') and cd('..') go up two more levels, ultimately reaching the base directory where the landmarks are stored.
+* Load landmarks data:
+  * cd(path2); changes the directory to the path where the landmarks file is located.
+  * pos = importdata('S005_001_00000001_landmarks.txt'); imports the landmark coordinates from the S005_001_00000001_landmarks.txt file into the variable pos. This file contains the (x, y) positions of landmarks on the image.
+* Extract and plot the landmark positions:
+  * x = pos(:,1); extracts the x-coordinates of the landmarks (the first column of pos).
+  * y = pos(:,2); extracts the y-coordinates of the landmarks (the second column of pos).
+  * plot(x, y, 'o') plots the landmarks as circles on the image using the extracted x and y coordinates.
 
-### The Image
+### The Result
 ![The San Juan Mountains are beautiful!](/M.Eng/Image/001.png "San Juan Mountains")
