@@ -30,12 +30,18 @@ _Assists individuals with disabilities_ in communication and interaction by tran
 
 **10. Market Research:** 
 Analyzes consumer reactions to _advertisements_, _products_, and _services_ for targeted improvements and campaign optimization.
-##
-0 : Anger
-1 : Disgust
-2 : Fear
-3 : Happiness
-4 : Sadness
-5 : Surprise
-6 : Neutral
-7 : Contempt
+
+## CK+ (Extended Cohn-Kanade Dataset)
+* The Extended Cohn-Kanade (CK+) dataset contains 593 video sequences from a total of 123 different subjects, ranging from 18 to 50 years of age with a variety of genders and heritage.
+* Each video shows a facial shift from the neutral expression to a targeted peak expression, recorded at 30 frames per second (FPS) with a resolution of either 640x490 or 640x480 pixels.
+* 
+## Expression Classes
+Emotions/Expressions are defined as determined index below:
+* 0 : Anger
+* 1 : Disgust
+* 2 : Fear
+* 3 : Happiness
+* 4 : Sadness
+* 5 : Surprise
+* 6 : Neutral
+* 7 : Contempt
