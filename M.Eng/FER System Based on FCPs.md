@@ -82,10 +82,13 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
 * **AU5:** Upper Lid Raiser (wide-open eyes)
 * **AU26:** Jaw Drop (mouth opened widely)
 
-## 4. 8-\oint FCPs Modelling
+## 4. 8-Point FCPs Modelling
 The image shows a simplified face with key facial characteristic points (FCPs), defined relative to a coordinate system with the origin . These points correspond to facial features like the eyebrows, eyes, nose, and mouth.
 
 To model each FCP mathematically, let us define the coordinates of the relevant points. Assuming the face is symmetric about the vertical axis through , we can define each point relative to the origin.
+Here is a rewritten and explained version of the equations in the image:
+1. Eye Openness ():
+$$\int_a^b f(x) \,dx = F(b) - F(a)$$
 
 
 ## 5. CK+ (Extended Cohn-Kanade Dataset)
