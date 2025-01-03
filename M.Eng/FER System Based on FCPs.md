@@ -100,3 +100,9 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
   * a facial shift from the neutral expression to a targeted peak expression
   * recorded at 30 frames per second (FPS)
   * with a resolution of either 640x490 or 640x480 pixels
+## Folders in CK+
+* a. cohn-kanade-images
+ * Contains the image sequences for all subjects.
+ * Organized by subject IDs (e.g., S001, S002), where each folder corresponds to a single subject.
+ * Each subject folder contains subfolders for individual expression sequences, named sequentially (e.g., 001, 002).
+ * Image sequences progress from a neutral expression to the peak expression.
