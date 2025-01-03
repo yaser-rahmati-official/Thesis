@@ -93,13 +93,13 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
   * 7: Surprise
 * The Extended Cohn-Kanade (CK+) dataset contains:
   * 593 video sequences
-  * from a total of 123 different subjects
-  * ranging from 18 to 50 years of age
-  * with a variety of genders and heritage
+  * From a total of 123 different subjects
+  * Ranging from 18 to 50 years of age
+  * With a variety of genders and heritage
 * Each video shows:
-  * a facial shift from the neutral expression to a targeted peak expression
-  * recorded at 30 frames per second (FPS)
-  * with a resolution of either 640x490 or 640x480 pixels
+  * A facial shift from the neutral expression to a targeted peak expression
+  * Recorded at 30 frames per second (FPS)
+  * With a resolution of either 640x490 or 640x480 pixels
 ## Folders in CK+
 * **cohn-kanade-images**
   * Contains the image sequences for all subjects.
