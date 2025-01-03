@@ -214,7 +214,11 @@ plot(x,y, 'o')
 ![The San Juan Mountains are beautiful!](/M.Eng/Image/001.png "68 FCPs")
 
 ## 8. Data Processing Procedure
-[main1.m](/M.Eng/Matlab Source Code/main1.m)
+
+[main1.m](./Matlab Source Code/main1.m)
+[main1.m](Matlab Source Code/main1.m)
+[main1.m](/Matlab Source Code/main1.m)
+
 **1. Check Image**
   * If the data is related to images:
     - Use Algorithm 1 ([main1.m](/M.Eng/Matlab Source Code/main1.m)
