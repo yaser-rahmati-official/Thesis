@@ -34,10 +34,13 @@ Analyzes consumer reactions to _advertisements_, _products_, and _services_ for 
 ## CK+ (Extended Cohn-Kanade Dataset)
 * The Extended Cohn-Kanade (CK+) dataset contains:
   * 593 video sequences
-  * from a total of 123 different subjects,
+  * from a total of 123 different subjects
   * ranging from 18 to 50 years of age
   * with a variety of genders and heritage
-* Each video shows a facial shift from the neutral expression to a targeted peak expression, recorded at 30 frames per second (FPS) with a resolution of either 640x490 or 640x480 pixels.
+* Each video shows:
+  1. a facial shift from the neutral expression to a targeted peak expression
+  2. recorded at 30 frames per second (FPS)
+  3. with a resolution of either 640x490 or 640x480 pixels
 * 
 ## Expression Classes
 Emotions/Expressions are defined as determined index below:
