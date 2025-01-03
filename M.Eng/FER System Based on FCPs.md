@@ -1,9 +1,9 @@
 # Thesis
 
 # Applications of Facial Expression Recognition (FER) Systems
-1. Human-Computer Interaction (HCI): 
+1. **Human-Computer Interaction (HCI):** 
 Enhances the responsiveness of applications by adapting to users' emotional states, such as in gaming, virtual assistants, and educational software.
-2. Mental Health Monitoring: 
+2. **Mental Health Monitoring:**
 Supports the detection and monitoring of mental health conditions like depression, anxiety, and stress through emotional analysis.
 3. Behavioral Analysis: 
 Provides insights into user reactions in scenarios such as marketing, customer service, and public opinion research.
