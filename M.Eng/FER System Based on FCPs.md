@@ -213,7 +213,7 @@ plot(x,y, 'o')
 ### 7.4. The Result
 ![The San Juan Mountains are beautiful!](/M.Eng/Image/001.png "68 FCPs")
 
-## 8. Data Processing Procedure
+## 8. Data Preprocessing
 
 The CK+ (Cohn-Kanade Extended) dataset is one of the most reputable and widely used databases for analyzing facial expressions. However, one of its weaknesses is that annotated data, such as Facial Characteristic Points (FCP), emotional states in the Emotion folder, and the coding system in the FACS folder, are not provided for all images in the extended-cohn-kanade-images directory.
 
