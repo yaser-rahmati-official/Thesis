@@ -88,6 +88,8 @@ The image shows a simplified face with key facial characteristic points (FCPs), 
 To model each FCP mathematically, let us define the coordinates of the relevant points. Assuming the face is symmetric about the vertical axis through , we can define each point relative to the origin.
 Here is a rewritten and explained version of the equations in the image:
 
+![The San Juan Mountains are beautiful!](/M.Eng/Image/002.png "San Juan Mountains")
+
 **1. Eye Openness:**
 
 $$O_{e}=y_{3}-y_{2}$$
