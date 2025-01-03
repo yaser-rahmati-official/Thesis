@@ -1,5 +1,11 @@
 # FER System Based on FCPs
 
+## Keywords
+* FER: Facial Expression Recognition
+* FCP: Facial Characteristics Points
+* AU: Action Unit
+* FACS: Facial Action Coding System
+
 ## Applications of Facial Expression Recognition (FER) Systems
 **1. Human-Computer Interaction (HCI):** 
 Enhances the responsiveness of applications by adapting to users' emotional states, such as in _gaming_, _virtual assistants_, and _educational software_.
@@ -33,10 +39,10 @@ Analyzes consumer reactions to _advertisements_, _products_, and _services_ for 
 
 ## CK+ (Extended Cohn-Kanade Dataset)
 * The Extended Cohn-Kanade (CK+) dataset contains:
-  * 593 video sequences
-  * from a total of 123 different subjects
-  * ranging from 18 to 50 years of age
-  * with a variety of genders and heritage
+  1. 593 video sequences
+  2. from a total of 123 different subjects
+  3. ranging from 18 to 50 years of age
+  4. with a variety of genders and heritage
 * Each video shows:
   1. a facial shift from the neutral expression to a targeted peak expression
   2. recorded at 30 frames per second (FPS)
