@@ -47,9 +47,9 @@ Analyzes consumer reactions to _advertisements_, _products_, and _services_ for 
   1. a facial shift from the neutral expression to a targeted peak expression
   2. recorded at 30 frames per second (FPS)
   3. with a resolution of either 640x490 or 640x480 pixels
-* 
+
 ## Expression Classes
-Emotions/Expressions are defined as determined index below:
+The Extended Cohn-Kanade Dataset (CK+), a widely used dataset for Facial Expression Recognition (FER), includes the following _expression classes_:
 * 1: Anger
 * 2: Contempt
 * 3: Disgust
