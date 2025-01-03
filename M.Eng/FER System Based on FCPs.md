@@ -48,9 +48,16 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
 * **AU24:** Lip Pressor (tightened and pressed lips)
 * **AU17:** Chin Raiser (raised chin)
 
-###2. Contempt
+### 2. Contempt
 * **AU14:** Dimpler (corner of the lip tightened and raised asymmetrically)
 * **AU12:** Lip Corner Puller (smirk-like movement, often asymmetric)
+
+### 3. Disgust
+* **AU9:** Nose Wrinkler (wrinkling of the nose)
+* **AU10:** Upper Lip Raiser (lifting the upper lip)
+* **AU16:** Lower Lip Depressor (pulling the lower lip down)
+* **AU4:** Brow Lowerer (furrowing the brow)
+
 
 ## CK+ (Extended Cohn-Kanade Dataset)
 * The Extended Cohn-Kanade (CK+) dataset contains:
