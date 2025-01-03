@@ -30,3 +30,12 @@ _Assists individuals with disabilities_ in communication and interaction by tran
 
 **10. Market Research:** 
 Analyzes consumer reactions to _advertisements_, _products_, and _services_ for targeted improvements and campaign optimization.
+##
+0 : Anger
+1 : Disgust
+2 : Fear
+3 : Happiness
+4 : Sadness
+5 : Surprise
+6 : Neutral
+7 : Contempt
