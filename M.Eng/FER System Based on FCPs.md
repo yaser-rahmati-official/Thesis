@@ -1,12 +1,12 @@
 # FER System Based on FCPs
 
-## Keywords
+## 1. Keywords
 * **FER:** Facial Expression Recognition
 * **FCP:** Facial Characteristics Points
 * **AU:** Action Unit
 * **FACS:** Facial Action Coding System
 
-## Applications of Facial Expression Recognition (FER) Systems
+## 2. Applications of Facial Expression Recognition (FER) Systems
 **1. Human-Computer Interaction (HCI):** 
 Enhances the responsiveness of applications by adapting to users' emotional states, such as in _gaming_, _virtual assistants_, and _educational software_.
 
@@ -37,7 +37,7 @@ _Assists individuals with disabilities_ in communication and interaction by tran
 **10. Market Research:** 
 Analyzes consumer reactions to _advertisements_, _products_, and _services_ for targeted improvements and campaign optimization.
 
-## Action Units (AUs) and Universal Facial Expressions
+## 3. Action Units (AUs) and Universal Facial Expressions
 Action Units (AUs) are the building blocks of facial expressions in the _Facial Action Coding System_ (FACS) developed by _Paul Ekman_ and _Wallace V. Friesen_. AUs describe _the movement of individual facial muscles, and combinations of AUs correspond to universal facial expressions_. Below is a guide to understanding AUs in the context of the seven universal facial expressions:
 
 ### 1. Anger
@@ -82,7 +82,7 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
 * **AU5:** Upper Lid Raiser (wide-open eyes)
 * **AU26:** Jaw Drop (mouth opened widely)
 
-## CK+ (Extended Cohn-Kanade Dataset)
+## 4. CK+ (Extended Cohn-Kanade Dataset)
 * The Extended Cohn-Kanade Dataset (CK+), a widely used dataset for Facial Expression Recognition (FER), includes the following _expression classes_:
   * 1: Anger
   * 2: Contempt
@@ -100,7 +100,7 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
   * A facial shift from the neutral expression to a targeted peak expression
   * Recorded at 30 frames per second (FPS)
   * With a resolution of either 640x490 or 640x480 pixels
-## Folders in CK+
+## 5. Folders in CK+
 * **cohn-kanade-images**
   * Contains the image sequences for all subjects.
   * Organized by subject IDs (e.g., S001, S002), where each folder corresponds to a single subject.
@@ -122,7 +122,7 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
   * Contains detailed annotations for Action Units (AUs) for each sequence.
   * Useful for FACS-based analysis and expression recognition tasks.
 
-## Identifying FCPs For Each Image
+## 6. Identifying FCPs For Each Image
 ### Source Code
 ```
 clc;
