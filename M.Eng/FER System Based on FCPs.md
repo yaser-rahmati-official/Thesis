@@ -149,12 +149,19 @@ plot(x,y, 'o')
 ```
 ### Algorithm Breakdown:
 * Load Image:
-  * Set the path to the image file, read it, and display it.
+  * _Set the path to the image file, read it, and display it._
 * Navigate to Landmarks Directory:
-  * Set the path to the landmarks file and navigate to it.
+  * _Set the path to the landmarks file and navigate to it._
 * Import Landmarks:
-  * Read the landmark positions from a text file.
+  * _Read the landmark positions from a text file._
 * Plot Landmarks on Image:
-  * Plot the x and y coordinates of the landmarks overlaid on the image.
+  * _Plot the x and y coordinates of the landmarks overlaid on the image._
+
+### Code Explanation
+* Clear workspace and close all figures:
+  * clc; clears the command window.
+  * clear; clears all variables in the workspace.
+  * close all; closes all open figure windows.
+
 ### The Image
 ![The San Juan Mountains are beautiful!](/M.Eng/Image/001.png "San Juan Mountains")
