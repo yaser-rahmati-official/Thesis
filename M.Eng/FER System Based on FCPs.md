@@ -2,7 +2,7 @@
 
 ## Applications of Facial Expression Recognition (FER) Systems
 **1. Human-Computer Interaction (HCI):** 
-Enhances the responsiveness of applications by adapting to users' emotional states, such as in gaming, virtual assistants, and educational software.
+Enhances the responsiveness of applications by adapting to users' emotional states, such as in _gaming_, _virtual assistants_, and _educational software_.
 
 **2. Mental Health Monitoring:**
 Supports the detection and monitoring of mental health conditions like depression, anxiety, and stress through emotional analysis.
