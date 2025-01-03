@@ -88,7 +88,7 @@ The image shows a simplified face with key facial characteristic points (FCPs), 
 To model each FCP mathematically, let us define the coordinates of the relevant points. Assuming the face is symmetric about the vertical axis through , we can define each point relative to the origin.
 Here is a rewritten and explained version of the equations in the image:
 
-![The San Juan Mountains are beautiful!](/M.Eng/Image/002.png "San Juan Mountains")
+![The San Juan Mountains are beautiful!](/M.Eng/Image/002.png "8-Points FCPs modelling")
 
 **1. Eye Openness:**
 
@@ -211,4 +211,4 @@ plot(x,y, 'o')
   * plot(x, y, 'o') plots the landmarks as circles on the image using the extracted x and y coordinates.
 
 ### 7.4. The Result
-![The San Juan Mountains are beautiful!](/M.Eng/Image/001.png "San Juan Mountains")
+![The San Juan Mountains are beautiful!](/M.Eng/Image/001.png "68 FCPs")
