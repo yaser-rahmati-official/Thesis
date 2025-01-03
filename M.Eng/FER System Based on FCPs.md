@@ -11,13 +11,13 @@ Supports the detection and monitoring of mental health conditions like _depressi
 Provides insights into user reactions in scenarios such as _marketing_, _customer service_, and _public opinion research_.
 
 **4. Surveillance and Security:** 
-Assists in identifying suspicious behavior or emotional distress in public spaces, enhancing safety and threat detection.
+Assists in identifying suspicious behavior or emotional distress in public spaces, _enhancing safety and threat detection_.
 
 **5. Healthcare:** 
-Enables non-invasive diagnosis and patient monitoring, including tracking pain levels or emotional responses during treatments.
+Enables non-invasive diagnosis and patient monitoring, including tracking _pain levels_ or _emotional responses during treatments_.
 
 **6. Entertainment:** 
-Powers emotion-driven content recommendations and interactive experiences in movies, games, and augmented/virtual reality.
+Powers emotion-driven content recommendations and interactive experiences in _movies_, _games_, and _augmented/virtual reality_.
 
 **7. Autonomous Systems:** 
 Enhances decision-making in robotics, automotive interfaces, and smart home devices by interpreting human emotional states.
