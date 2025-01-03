@@ -110,5 +110,14 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
   * Contains the emotion labels for the image sequences.
   * Organized similarly to cohn-kanade-images, with subfolders for each subject and sequence.
   * Each sequence folder contains a .txt file indicating the emotion label (e.g., 1 for anger, 6 for happiness).
-
-
+* **Landmarks**
+  * Stores facial landmark data for each image in the dataset.
+  * Organized by subject and sequence, mirroring the structure of cohn-kanade-images.
+  * Each file contains 68 landmark points, typically in .txt or similar format.
+* **FACS**
+  * Contains Facial Action Coding System (FACS) labels for sequences.
+  * These labels describe the action units (AUs) activated in the expression sequence.
+  * Organized similarly to other folders, with subfolders for subjects and sequences.
+* **AU_labels (if provided)**
+  * Contains detailed annotations for Action Units (AUs) for each sequence.
+  * Useful for FACS-based analysis and expression recognition tasks.
