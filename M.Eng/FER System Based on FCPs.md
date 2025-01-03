@@ -217,15 +217,15 @@ plot(x,y, 'o')
 
 The CK+ (Cohn-Kanade Extended) dataset is one of the most reputable and widely used databases for analyzing facial expressions. However, one of its weaknesses is that annotated data, such as Facial Characteristic Points (FCP), emotional states in the Emotion folder, and the coding system in the FACS folder, are not provided for all images in the extended-cohn-kanade-images directory.
 
-### 8.1. Strength: ###
+### 8.1. Strength:
 
 The Landmarks folder, which includes 68 facial characteristic points (FCP), significantly facilitates image processing. These landmarks are directly utilized in many machine learning and image analysis algorithms.
 
-### 8.2. Weakness: ###
+### 8.2. Weakness:
 
 The FCP data and the emotional state information in the Emotion and FACS folders are not consistently provided for all images. This lack of completeness necessitates a filtering and selection process to create a suitable dataset for the project.
 
-### 8.3. Suggested Filtering Steps: ###
+### 8.3. Suggested Filtering Steps:
 
 * Review Facial Landmarks:
 
@@ -243,7 +243,7 @@ _Exclude all images without landmark or emotional state information from the fin
 
 _After completing these steps, compile a new, integrated dataset that includes images, landmark data, and emotional state annotations._
 
-### 8.4. Algorithm Breakdown: ###
+### 8.4. Algorithm Breakdown:
 
 **Check Image**
   * If the data is related to images:
@@ -272,5 +272,63 @@ _After completing these steps, compile a new, integrated dataset that includes i
        * Process FACS data
        * Save to file [facs.mat](https://github.com/yaser-rahmati-official/Thesis/blob/main/M.Eng/Result/Facs.mat)
 
-### 8.5. Flowchart ###
+### 8.5. Flowchart 
 ![The San Juan Mountains are beautiful!](/M.Eng/Image/003.png "Flowchart")
+
+## Feature Vector
+
+```
+%feature extraction
+clc;
+clear;
+close all;
+load('Emotion');
+load('total1');
+count=1;
+for i=1:size(facs,1)
+    for j=1:size(facs,2)
+        temp=facs(i,j,:);
+        temp2=emotion{i,j};
+        if(isempty(temp2)==1)
+            continue;
+        else
+            qx=[];
+            qy=[];
+            for k=1:length(temp)
+                temp1=temp{k};
+                if(isempty(temp1)==1)
+                    break;
+                else
+                    qx=[qx temp1(:,1)];
+                    qy=[qy temp1(:,2)];
+                end
+            end
+            if(isempty(qx)==1)
+                continue;
+            end
+            qx=(qx-min(qx(:)));
+            qx=qx/max(qx(:));
+            qy=(qy-min(qy(:)));
+            qy=qy/max(qy(:));
+            qx1=diff(qx');
+            qx1(:,1)=[];
+            qx2=diff(diff(qx)');
+            qxx=[qx1 ; qx2];
+            qy1=diff(qy');
+            qy1(:,1)=[];
+            qy2=diff(diff(qy)');
+            qyy=[qy1 ; qy2];
+            q2=qxx'.^2;
+            q3=qyy'.^2;
+            gg=sum(q2)+sum(q3);
+            [~,q4]=sort(gg,'descend');
+            q4=sort(q4(1:5));
+            q5=sqrt(q2(:,q4)+q3(:,q4));
+            feat(count,:)=q5(:);
+            y(count)=temp2;
+            count=count+1;
+        end
+    end
+end
+save('data_final1','feat','y');
+```
