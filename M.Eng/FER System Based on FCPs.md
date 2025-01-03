@@ -93,13 +93,21 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
   2. recorded at 30 frames per second (FPS)
   3. with a resolution of either 640x490 or 640x480 pixels
 
-## Expression Classes
-The Extended Cohn-Kanade Dataset (CK+), a widely used dataset for Facial Expression Recognition (FER), includes the following _expression classes_:
-* 1: Anger
-* 2: Contempt
-* 3: Disgust
-* 4: Fear
-* 5: Happiness
-* 6: Sadness
-* 7: Surprise
-
+## CK+ (Extended Cohn-Kanade Dataset)
+* The Extended Cohn-Kanade Dataset (CK+), a widely used dataset for Facial Expression Recognition (FER), includes the following _expression classes_:
+  * 1: Anger
+  * 2: Contempt
+  * 3: Disgust
+  * 4: Fear
+  * 5: Happiness
+  * 6: Sadness
+  * 7: Surprise
+* The Extended Cohn-Kanade (CK+) dataset contains:
+  1. 593 video sequences
+  2. from a total of 123 different subjects
+  3. ranging from 18 to 50 years of age
+  4. with a variety of genders and heritage
+* Each video shows:
+  1. a facial shift from the neutral expression to a targeted peak expression
+  2. recorded at 30 frames per second (FPS)
+  3. with a resolution of either 640x490 or 640x480 pixels
