@@ -82,7 +82,13 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
 * **AU5:** Upper Lid Raiser (wide-open eyes)
 * **AU26:** Jaw Drop (mouth opened widely)
 
-## 4. CK+ (Extended Cohn-Kanade Dataset)
+## 4. 8-\oint FCPs Modelling
+The image shows a simplified face with key facial characteristic points (FCPs), defined relative to a coordinate system with the origin . These points correspond to facial features like the eyebrows, eyes, nose, and mouth.
+
+To model each FCP mathematically, let us define the coordinates of the relevant points. Assuming the face is symmetric about the vertical axis through , we can define each point relative to the origin.
+
+
+## 5. CK+ (Extended Cohn-Kanade Dataset)
 * The Extended Cohn-Kanade Dataset (CK+), a widely used dataset for Facial Expression Recognition (FER), includes the following _expression classes_:
   * 1: Anger
   * 2: Contempt
@@ -100,7 +106,7 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
   * A facial shift from the neutral expression to a targeted peak expression
   * Recorded at 30 frames per second (FPS)
   * With a resolution of either 640x490 or 640x480 pixels
-## 5. Folders in CK+
+## 6. Folders in CK+
 * **cohn-kanade-images**
   * Contains the image sequences for all subjects.
   * Organized by subject IDs (e.g., S001, S002), where each folder corresponds to a single subject.
@@ -122,7 +128,7 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
   * Contains detailed annotations for Action Units (AUs) for each sequence.
   * Useful for FACS-based analysis and expression recognition tasks.
 
-## 6. Identifying FCPs For Each Image
+## 7. Identifying FCPs For Each Image
 ### Source Code
 ```
 clc;
