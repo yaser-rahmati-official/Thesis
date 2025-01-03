@@ -121,3 +121,28 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
 * **AU_labels (if provided)**
   * Contains detailed annotations for Action Units (AUs) for each sequence.
   * Useful for FACS-based analysis and expression recognition tasks.
+
+
+```
+clc;
+clear ;
+close all;
+
+path1='extended-cohn-kanade-images\S005\001';
+cd(path1);
+img=imread('S005_001_00000001.png');
+imshow(img)
+hold
+
+cd('..')
+cd('..')
+cd('..')
+
+path2='Landmarks\S005\001';
+cd(path2);
+pos=importdata('S005_001_00000001_landmarks.txt')
+
+x=pos(:,1)
+y=pos(:,2)
+plot(x,y, 'o')
+```
