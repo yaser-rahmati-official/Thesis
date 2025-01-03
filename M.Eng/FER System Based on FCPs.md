@@ -227,16 +227,25 @@ The FCP data and the emotional state information in the Emotion and FACS folders
 
 **8.3. Suggested Filtering Steps:**
 
-* **Review Facial Landmarks:**
-First, check the Landmarks folder and select images with available landmark data.
-* **Match Emotion and FACS Data:**
-Ensure that the selected images also have corresponding data in the Emotion and FACS folders.
-* **Remove Incomplete Data:**
-Exclude all images without landmark or emotional state information from the final dataset.
-* **Create a New Dataset:**
-After completing these steps, compile a new, integrated dataset that includes images, landmark data, and emotional state annotations.
+* Review Facial Landmarks:
 
-**8.4. Check Image**
+_First, check the Landmarks folder and select images with available landmark data._
+
+* Match Emotion and FACS Data:
+
+_Ensure that the selected images also have corresponding data in the Emotion and FACS folders._
+
+* Remove Incomplete Data:
+
+_Exclude all images without landmark or emotional state information from the final dataset._
+
+* Create a New Dataset:
+
+_After completing these steps, compile a new, integrated dataset that includes images, landmark data, and emotional state annotations._
+
+**8.4. Algorithm Breakdown:**
+
+**Check Image**
   * If the data is related to images:
     - Use Algorithm 1 ([main1.m](https://github.com/yaser-rahmati-official/Thesis/blob/main/M.Eng/Matlab%20Source%20Code/main1.m))
        * Load extended-cohn-kanade-images
