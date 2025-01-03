@@ -212,3 +212,17 @@ plot(x,y, 'o')
 
 ### 7.4. The Result
 ![The San Juan Mountains are beautiful!](/M.Eng/Image/001.png "68 FCPs")
+
+## 8. Data Processing Procedure
+**1. Check Image**
+  * If the data is related to images:
+  * Use Algorithm 1 (main1.m)
+  * Load extended-cohn-kanade-images
+  * Process image data
+  * Save to file landmark.mat
+**2. Check FCP**
+  * If the data is related to FCP:
+  * Use Algorithm 3 (main2.m)
+  * Load Landmarks
+  * Process FCP data
+  * Save to file landmark.mat
