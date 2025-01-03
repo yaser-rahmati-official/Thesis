@@ -122,7 +122,8 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
   * Contains detailed annotations for Action Units (AUs) for each sequence.
   * Useful for FACS-based analysis and expression recognition tasks.
 
-
+## Identifying FCPs For Each Image
+### Source Code
 ```
 clc;
 clear ;
@@ -146,3 +147,12 @@ x=pos(:,1)
 y=pos(:,2)
 plot(x,y, 'o')
 ```
+### Algorithm Breakdown:
+* Load Image:
+  * Set the path to the image file, read it, and display it.
+* Navigate to Landmarks Directory:
+  * Set the path to the landmarks file and navigate to it.
+* Import Landmarks:
+  * Read the landmark positions from a text file.
+* Plot Landmarks on Image:
+  * Plot the x and y coordinates of the landmarks overlaid on the image.
