@@ -157,4 +157,4 @@ plot(x,y, 'o')
 * Plot Landmarks on Image:
   * Plot the x and y coordinates of the landmarks overlaid on the image.
 ### The Image
-![The San Juan Mountains are beautiful!](/assets/images/san-juan-mountains.jpg "San Juan Mountains")
+![The San Juan Mountains are beautiful!](/M.Eng/Image/001.png "San Juan Mountains")
