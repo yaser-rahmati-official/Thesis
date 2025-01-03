@@ -1,12 +1,12 @@
 # FER System Based on FCPs
 
-## Keywords
+## 1. Keywords
 * **FER:** Facial Expression Recognition
 * **FCP:** Facial Characteristics Points
 * **AU:** Action Unit
 * **FACS:** Facial Action Coding System
 
-## Applications of Facial Expression Recognition (FER) Systems
+## 2. Applications of Facial Expression Recognition (FER) Systems
 **1. Human-Computer Interaction (HCI):** 
 Enhances the responsiveness of applications by adapting to users' emotional states, such as in _gaming_, _virtual assistants_, and _educational software_.
 
@@ -37,7 +37,7 @@ _Assists individuals with disabilities_ in communication and interaction by tran
 **10. Market Research:** 
 Analyzes consumer reactions to _advertisements_, _products_, and _services_ for targeted improvements and campaign optimization.
 
-## Action Units (AUs) and Universal Facial Expressions
+## 3. Action Units (AUs) and Universal Facial Expressions
 Action Units (AUs) are the building blocks of facial expressions in the _Facial Action Coding System_ (FACS) developed by _Paul Ekman_ and _Wallace V. Friesen_. AUs describe _the movement of individual facial muscles, and combinations of AUs correspond to universal facial expressions_. Below is a guide to understanding AUs in the context of the seven universal facial expressions:
 
 ### 1. Anger
@@ -82,7 +82,33 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
 * **AU5:** Upper Lid Raiser (wide-open eyes)
 * **AU26:** Jaw Drop (mouth opened widely)
 
-## CK+ (Extended Cohn-Kanade Dataset)
+## 4. 8-Point FCPs Modelling
+The image shows a simplified face with key facial characteristic points (FCPs), defined relative to a coordinate system with the origin . These points correspond to facial features like the eyebrows, eyes, nose, and mouth.
+
+To model each FCP mathematically, let us define the coordinates of the relevant points. Assuming the face is symmetric about the vertical axis through , we can define each point relative to the origin.
+Here is a rewritten and explained version of the equations in the image:
+
+**1. Eye Openness:**
+
+$$O_{e}=y_{3}-y_{2}$$
+
+**2. Eyebrow Height Relative to Eye :**
+
+$$H_{e}=y_{3}-y_{1}$$
+
+**3. Mouth Width:**
+
+$$W_{me}=x_{5}-x_{6}$$
+
+**4. Mouth Openness:**
+
+$$O_{m}=x_{8}-x_{7}$$
+
+**5. Distance of Lower Lip to Chin:**
+
+$$O_{m}=\frac{(y_{8}-y_{7})+(y_{8}-y_{6})}{2}$$
+
+## 5. CK+ (Extended Cohn-Kanade Dataset)
 * The Extended Cohn-Kanade Dataset (CK+), a widely used dataset for Facial Expression Recognition (FER), includes the following _expression classes_:
   * 1: Anger
   * 2: Contempt
@@ -100,7 +126,7 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
   * A facial shift from the neutral expression to a targeted peak expression
   * Recorded at 30 frames per second (FPS)
   * With a resolution of either 640x490 or 640x480 pixels
-## Folders in CK+
+## 6. Folders in CK+
 * **cohn-kanade-images**
   * Contains the image sequences for all subjects.
   * Organized by subject IDs (e.g., S001, S002), where each folder corresponds to a single subject.
@@ -122,7 +148,7 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
   * Contains detailed annotations for Action Units (AUs) for each sequence.
   * Useful for FACS-based analysis and expression recognition tasks.
 
-## Identifying FCPs For Each Image
+## 7. Identifying FCPs For Each Image
 ### Source Code
 ```
 clc;
@@ -148,11 +174,39 @@ y=pos(:,2)
 plot(x,y, 'o')
 ```
 ### Algorithm Breakdown:
-* Load Image:
+* **Load Image:**
   * Set the path to the image file, read it, and display it.
-* Navigate to Landmarks Directory:
+* **Navigate to Landmarks Directory:**
   * Set the path to the landmarks file and navigate to it.
-* Import Landmarks:
+* **Import Landmarks:**
   * Read the landmark positions from a text file.
-* Plot Landmarks on Image:
+* **Plot Landmarks on Image:**
   * Plot the x and y coordinates of the landmarks overlaid on the image.
+
+### Code Explanation
+* **Clear workspace and close all figures:**
+  * clc; clears the command window.
+  * clear; clears all variables in the workspace.
+  * close all; closes all open figure windows.
+* **Set file paths for image and landmarks:**
+  * path1 is defined as the directory containing the image file. The variable path1 is set to 'extended-cohn-kanade-images\S005\001'.
+  * path2 is defined as the directory containing the landmarks data file. It is set to 'Landmarks\S005\001'.
+* **Navigate to image directory:**
+  * cd(path1); changes the current working directory to path1 where the image file is located.
+* **Read and display the image:**
+  * img=imread('S005_001_00000001.png'); reads the image file S005_001_00000001.png into the variable img.
+  * imshow(img) displays the image in a figure window.
+  * hold ensures that subsequent plotting commands add to the current plot (i.e., the image stays visible while landmarks are added).
+* **Navigate to landmarks directory:**
+  * cd('..') goes up one level in the directory structure.
+  * cd('..') and cd('..') go up two more levels, ultimately reaching the base directory where the landmarks are stored.
+* **Load landmarks data:**
+  * cd(path2); changes the directory to the path where the landmarks file is located.
+  * pos = importdata('S005_001_00000001_landmarks.txt'); imports the landmark coordinates from the S005_001_00000001_landmarks.txt file into the variable pos. This file contains the (x, y) positions of landmarks on the image.
+* **Extract and plot the landmark positions:**
+  * x = pos(:,1); extracts the x-coordinates of the landmarks (the first column of pos).
+  * y = pos(:,2); extracts the y-coordinates of the landmarks (the second column of pos).
+  * plot(x, y, 'o') plots the landmarks as circles on the image using the extracted x and y coordinates.
+
+### The Result
+![The San Juan Mountains are beautiful!](/M.Eng/Image/001.png "San Juan Mountains")
