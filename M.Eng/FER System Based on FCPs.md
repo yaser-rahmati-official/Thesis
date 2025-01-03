@@ -1,10 +1,10 @@
 # FER System Based on FCPs
 
 ## Keywords
-* FER: Facial Expression Recognition
-* FCP: Facial Characteristics Points
-* AU: Action Unit
-* FACS: Facial Action Coding System
+* **FER:** Facial Expression Recognition
+* **FCP:** Facial Characteristics Points
+* **AU:** Action Unit
+* **FACS:** Facial Action Coding System
 
 ## Applications of Facial Expression Recognition (FER) Systems
 **1. Human-Computer Interaction (HCI):** 
