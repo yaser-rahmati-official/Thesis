@@ -50,11 +50,11 @@ Analyzes consumer reactions to _advertisements_, _products_, and _services_ for 
 * 
 ## Expression Classes
 Emotions/Expressions are defined as determined index below:
-* 0 : Anger
-* 1 : Disgust
-* 2 : Fear
-* 3 : Happiness
-* 4 : Sadness
-* 5 : Surprise
-* 6 : Neutral
-* 7 : Contempt
+* 1: Anger
+* 2: Contempt
+* 3: Disgust
+* 4: Fear
+* 5: Happiness
+* 6: Sadness
+* 7: Surprise
+
