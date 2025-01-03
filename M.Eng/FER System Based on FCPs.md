@@ -58,6 +58,29 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
 * **AU16:** Lower Lip Depressor (pulling the lower lip down)
 * **AU4:** Brow Lowerer (furrowing the brow)
 
+### 4. Fear
+* **AU1:** Inner Brow Raiser (inner part of the eyebrows raised)
+* **AU2:** Outer Brow Raiser (outer part of the eyebrows raised)
+* **AU4:** Brow Lowerer (slight furrowing of the brows)
+* **AU5:** Upper Lid Raiser (wide-open eyes)
+* **AU20:** Lip Stretcher (corners of the lips stretched horizontally)
+* **AU25:** Lips Parted (mouth opened slightly)
+
+### 5. Happiness
+* **AU6:** Cheek Raiser (smiling with the eyes or "crow’s feet")
+* **AU12:** Lip Corner Puller (smile with upward movement of lip corners)
+
+### 6. Sadness
+* **AU1:** Inner Brow Raiser (inner eyebrows pulled upward)
+* **AU4:** Brow Lowerer (slightly furrowed eyebrows)
+* **AU15:** Lip Corner Depressor (corners of the lips pulled downward)
+* **AU17:** Chin Raiser (slight upward chin movement)
+
+### 7. Surprise
+* **AU1:** Inner Brow Raiser (eyebrows raised upward)
+* **AU2:** Outer Brow Raiser (outer part of the eyebrows raised)
+* **AU5:** Upper Lid Raiser (wide-open eyes)
+* **AU26:** Jaw Drop (mouth opened widely)
 
 ## CK+ (Extended Cohn-Kanade Dataset)
 * The Extended Cohn-Kanade (CK+) dataset contains:
