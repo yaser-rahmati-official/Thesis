@@ -523,3 +523,106 @@ err_ts
 toc
 ```
 This MATLAB script performs feature extraction and classification on a dataset. Here’s a breakdown of the code:
+### 10.1. Preliminary Setup
+```
+clc;
+clear;
+close all;
+tic
+```
+* clc: Clears the command window.
+* clear: Removes all variables from the workspace.
+* close all: Closes all open figure windows.
+* tic: Starts a timer to measure code execution time.
+### 10.2. Loading Data
+```
+load('data_final1');
+xin=feat;
+ptrain=0.7;
+```
+* load('data_final1'): Loads a .mat file containing variables, assuming feat and y.
+* feat: Features matrix (independent variables).
+* y: Labels vector (dependent variable).
+* ptrain=0.7: Specifies 70% of the data for training and the rest for testing.
+### 10.3. Feature Normalization
+```
+temp=y;
+xin=log10(xin);
+xin=xin-min(xin(:));
+xin=xin./max(xin(:));
+```
+* temp=y;: Stores y into a temporary variable (not used later).
+* log10(xin): Applies a base-10 logarithmic transformation to reduce feature skewness.
+* min(xin(:)): Subtracts the minimum value from all elements, ensuring values start from zero.
+* max(xin(:)): Divides by the maximum value, scaling features to the range [0, 1].
+### 10.4. Data Splitting and Training Loop
+```
+for j=1:10    
+    N=randperm(length(y));
+    Ntr=N(1:fix(length(y)*ptrain));
+    Nts=N(1+fix(length(y)*ptrain):end);
+```
+* Random Shuffling:
+  * randperm(length(y)): Generates a random permutation of indices for splitting data.
+* Train-Test Split:
+  * Ntr: Indices for the training set (70% of data).
+  * Nts: Indices for the testing set (remaining 30%).
+### 10.5. Feature and Label Assignment
+```
+    xtr=xin(Ntr,:);
+    xts=xin(Nts,:);
+    ytr=y(Ntr);
+    yts=y(Nts);
+```
+* xtr: Training features.
+* xts: Testing features.
+* ytr: Training labels.
+* yts: Testing labels.
+### 10.6. Classifier Training
+```
+    rahmatii= fitcknn(xtr,ytr); %train 0
+```
+* fitcknn(xtr, ytr): Trains a k-Nearest Neighbors (k-NN) classifier on the training data.
+  * Outputs a model stored in rahmatii.
+### 10.7. Prediction
+```
+    ytr_m=predict(rahmatii,xtr);
+    yts_m=predict(rahmatii,xts);
+```
+* predict(rahmatii, xtr): Predicts labels for training features.
+* predict(rahmatii, xts): Predicts labels for testing features.
+* Post-Processing:
+```
+  ytr_m(ytr_m>7)=7;
+  ytr_m(ytr_m<1)=1;
+  yts_m(yts_m>7)=7;
+  yts_m(yts_m<1)=1;
+```
+* Clips predictions to ensure labels fall between 1 and 7.
+### 10.8. Error Calculation
+```
+    err_tr(j)=length(find(ytr-ytr_m'~=0))/length(ytr)*100;
+    err_ts(j)=length(find(yts-yts_m'~=0))/length(yts)*100;
+```
+* Training Error (err_tr):
+  * Compares predicted (ytr_m) and actual labels (ytr) for the training set.
+  * Counts mismatches, calculates the percentage of incorrect predictions.
+* Testing Error (err_ts):
+  * Same calculation for the test set.
+### 10.9. Early Stopping
+```
+    if(err_tr(j)+err_ts(j)<20)
+        break;
+    end
+```
+* Stops training if the sum of training and testing errors is less than 20%.
+### 10.10. Finalization
+```
+save('finals1');
+err_tr
+err_ts
+toc
+```
+* save('finals1'): Saves the workspace variables to a .mat file.
+* err_tr and err_ts: Displays the training and testing errors for each iteration.
+* toc: Stops the timer and displays the execution time.
