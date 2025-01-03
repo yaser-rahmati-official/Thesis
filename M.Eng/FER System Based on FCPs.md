@@ -156,3 +156,5 @@ plot(x,y, 'o')
   * Read the landmark positions from a text file.
 * Plot Landmarks on Image:
   * Plot the x and y coordinates of the landmarks overlaid on the image.
+### The Image
+![The San Juan Mountains are beautiful!](/assets/images/san-juan-mountains.jpg "San Juan Mountains")
