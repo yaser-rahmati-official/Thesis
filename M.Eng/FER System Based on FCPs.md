@@ -217,9 +217,9 @@ plot(x,y, 'o')
 **1. Check Image**
   * If the data is related to images:
     - Use Algorithm 1 (main1.m)
-      . Load extended-cohn-kanade-images
-      . Process image data
-      . Save to file landmark.mat
+       * Load extended-cohn-kanade-images
+       * Process image data
+       * Save to file landmark.mat
 
 **2. Check FCP**
   * If the data is related to FCP:
