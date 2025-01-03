@@ -224,10 +224,10 @@ plot(x,y, 'o')
 
 **2. Check FCP**
   * If the data is related to FCP:
-  * Use Algorithm 3 (main2.m)
-  * Load Landmarks
-  * Process FCP data
-  * Save to file landmark.mat
+    - Use Algorithm 3 ([main2.m](Thesis/M.Eng/Matlab Source Code/main2.m))
+       * Load Landmarks
+       * Process FCP data
+       * Save to file landmark.mat
 
 **3. Check Emotion**
   * If the data is related to Emotion:
