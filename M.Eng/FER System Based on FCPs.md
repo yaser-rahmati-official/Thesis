@@ -94,9 +94,9 @@ Here is a rewritten and explained version of the equations in the image:
 
 $$O_{e}=y_{3}-y_{2}$$
 
-**2. Eyebrow Height Relative to Eye :**
+**2. Eyebrow Height Relative to The Pupil of The Eye :**
 
-$$H_{e}=y_{3}-y_{1}$$
+$$H_{e}=y_{4}-y_{1}$$
 
 **3. Mouth Width:**
 
@@ -108,7 +108,7 @@ $$O_{m}=x_{8}-x_{7}$$
 
 **5. Distance of Lower Lip to Chin:**
 
-$$O_{m}=\frac{(y_{8}-y_{7})+(y_{8}-y_{6})}{2}$$
+$$O_{m}=\frac{(y_{8}-y_{5})+(y_{8}-y_{6})}{2}$$
 
 ## 5. CK+ (Extended Cohn-Kanade Dataset)
 * The Extended Cohn-Kanade Dataset (CK+), a widely used dataset for Facial Expression Recognition (FER), includes the following _expression classes_:
