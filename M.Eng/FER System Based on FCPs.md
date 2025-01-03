@@ -224,7 +224,7 @@ plot(x,y, 'o')
 
 **2. Check FCP**
   * If the data is related to FCP:
-    - Use Algorithm 3 ([main2.m]([Thesis/M.Eng/Matlab Source Code/main2.m](https://github.com/yaser-rahmati-official/Thesis/blob/main/M.Eng/Matlab%20Source%20Code/main2.m)))
+    - Use Algorithm 3 ([main2.m](https://github.com/yaser-rahmati-official/Thesis/blob/main/M.Eng/Matlab%20Source%20Code/main2.m))
        * Load Landmarks
        * Process FCP data
        * Save to file landmark.mat
