@@ -216,7 +216,7 @@ plot(x,y, 'o')
 ## 8. Data Processing Procedure
 **1. Check Image**
   * If the data is related to images:
-    - Use Algorithm 1 (main1.m)
+    - Use Algorithm 1 ([main1.m](M.Eng/Matlab Source Code)
        * Load extended-cohn-kanade-images
        * Process image data
        * Save to file landmark.mat
