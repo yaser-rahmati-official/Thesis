@@ -250,7 +250,6 @@ _After completing these steps, compile a new, integrated dataset that includes i
     - Use Algorithm 1 ([main1.m](https://github.com/yaser-rahmati-official/Thesis/blob/main/M.Eng/Matlab%20Source%20Code/main1.m))
        * Load extended-cohn-kanade-images
        * Process image data
-       * Save to file landmark.mat
 
 **2. Check FCP**
   * If the data is related to FCP:
