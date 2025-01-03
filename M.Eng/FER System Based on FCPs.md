@@ -220,9 +220,24 @@ plot(x,y, 'o')
   * Load extended-cohn-kanade-images
   * Process image data
   * Save to file landmark.mat
+
 **2. Check FCP**
   * If the data is related to FCP:
   * Use Algorithm 3 (main2.m)
   * Load Landmarks
   * Process FCP data
   * Save to file landmark.mat
+
+**3. Check Emotion**
+  * If the data is related to Emotion:
+  * Use Algorithm 2 (main2c.m)
+  * Load Emotion labels
+  * Process Emotion data
+  * Save to file emotion.mat
+
+**4. Check FACS**
+  * If the data is related to FACS:
+  * Use Algorithm 2b (main2b.m)
+  * Load FACS labels
+  * Process FACS data
+  * Save to file facs.mat
