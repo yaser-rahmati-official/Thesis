@@ -231,14 +231,14 @@ plot(x,y, 'o')
 
 **3. Check Emotion**
   * If the data is related to Emotion:
-  * Use Algorithm 2 (main2c.m)
-  * Load Emotion labels
-  * Process Emotion data
-  * Save to file emotion.mat
+    - Use Algorithm 2 ([main2c.m](https://github.com/yaser-rahmati-official/Thesis/blob/main/M.Eng/Matlab%20Source%20Code/main2c.m))
+       * Load Emotion labels
+       * Process Emotion data
+       * Save to file emotion.mat
 
 **4. Check FACS**
   * If the data is related to FACS:
-  * Use Algorithm 2b (main2b.m)
-  * Load FACS labels
-  * Process FACS data
-  * Save to file facs.mat
+    - Use Algorithm 2b ([main2b.m](https://github.com/yaser-rahmati-official/Thesis/blob/main/M.Eng/Matlab%20Source%20Code/main2b.m))
+       * Load FACS labels
+       * Process FACS data
+       * Save to file facs.mat
