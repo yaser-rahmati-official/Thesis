@@ -90,23 +90,23 @@ Here is a rewritten and explained version of the equations in the image:
 
 ![The San Juan Mountains are beautiful!](/M.Eng/Image/002.png "San Juan Mountains")
 
-**4.1. Eye Openness:**
+**1. Eye Openness:**
 
 $$O_{e}=y_{3}-y_{2}$$
 
-**4.2. Eyebrow Height Relative to The Pupil of The Eye :**
+**2. Eyebrow Height Relative to The Pupil of The Eye :**
 
 $$H_{e}=y_{4}-y_{1}$$
 
-**4.3. Mouth Width:**
+**3. Mouth Width:**
 
 $$W_{me}=x_{5}-x_{6}$$
 
-**4.4. Mouth Openness:**
+**4. Mouth Openness:**
 
 $$O_{m}=x_{8}-x_{7}$$
 
-**4.5. Distance of Lower Lip to Chin:**
+**5. Distance of Lower Lip to Chin:**
 
 $$O_{m}=\frac{(y_{8}-y_{5})+(y_{8}-y_{6})}{2}$$
 
