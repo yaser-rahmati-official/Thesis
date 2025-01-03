@@ -278,6 +278,8 @@ _After completing these steps, compile a new, integrated dataset that includes i
 ## 9. Feature Vector
 
 ### 9.1. Matlab Source Code
+This MATLAB code performs feature extraction from a dataset for an emotion recognition task. It processes data stored in the variables facs and emotion, computes certain features, and stores the results in variables feat and y. Here’s a detailed step-by-step explanation of the operations:
+
 ```
 %feature extraction
 clc;
@@ -333,3 +335,13 @@ for i=1:size(facs,1)
 end
 save('data_final1','feat','y');
 ```
+### 1. Initialization
+```
+clc; clear; close all;
+load('Emotion');
+load('total1');
+count=1;
+```
+* clc; clear; close all;: Clears the command window, removes all variables, and closes all figure windows.
+* load('Emotion') and load('total1'): Loads data files Emotion and total1 into the workspace. These files are assumed to contain the variables facs and emotion.
+* count=1;: Initializes a counter to track the rows in the output feature matrix feat.
