@@ -522,3 +522,4 @@ err_ts
 
 toc
 ```
+This MATLAB script performs feature extraction and classification on a dataset. Here’s a breakdown of the code:
