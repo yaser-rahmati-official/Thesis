@@ -215,7 +215,28 @@ plot(x,y, 'o')
 
 ## 8. Data Processing Procedure
 
-**1. Check Image**
+The CK+ (Cohn-Kanade Extended) dataset is one of the most reputable and widely used databases for analyzing facial expressions. However, one of its weaknesses is that annotated data, such as Facial Characteristic Points (FCP), emotional states in the Emotion folder, and the coding system in the FACS folder, are not provided for all images in the extended-cohn-kanade-images directory.
+
+**8.1. Strength:**
+
+The Landmarks folder, which includes 68 facial characteristic points (FCP), significantly facilitates image processing. These landmarks are directly utilized in many machine learning and image analysis algorithms.
+
+**8.2. Weakness:**
+
+The FCP data and the emotional state information in the Emotion and FACS folders are not consistently provided for all images. This lack of completeness necessitates a filtering and selection process to create a suitable dataset for the project.
+
+**8.3. Suggested Filtering Steps:**
+
+* **Review Facial Landmarks:**
+First, check the Landmarks folder and select images with available landmark data.
+* **Match Emotion and FACS Data:**
+Ensure that the selected images also have corresponding data in the Emotion and FACS folders.
+* **Remove Incomplete Data:**
+Exclude all images without landmark or emotional state information from the final dataset.
+* **Create a New Dataset:**
+After completing these steps, compile a new, integrated dataset that includes images, landmark data, and emotional state annotations.
+
+**8.4. Check Image**
   * If the data is related to images:
     - Use Algorithm 1 ([main1.m](https://github.com/yaser-rahmati-official/Thesis/blob/main/M.Eng/Matlab%20Source%20Code/main1.m))
        * Load extended-cohn-kanade-images
