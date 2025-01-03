@@ -151,7 +151,7 @@ $$O_{m}=\frac{(y_{8}-y_{5})+(y_{8}-y_{6})}{2}$$
   * Useful for FACS-based analysis and expression recognition tasks.
 
 ## 7. Identifying FCPs For Each Image
-### Source Code
+### 7.1. Source Code
 ```
 clc;
 clear ;
@@ -175,7 +175,7 @@ x=pos(:,1)
 y=pos(:,2)
 plot(x,y, 'o')
 ```
-### Algorithm Breakdown:
+### 7.2. Algorithm Breakdown:
 * **Load Image:**
   * Set the path to the image file, read it, and display it.
 * **Navigate to Landmarks Directory:**
@@ -185,7 +185,7 @@ plot(x,y, 'o')
 * **Plot Landmarks on Image:**
   * Plot the x and y coordinates of the landmarks overlaid on the image.
 
-### Code Explanation
+### 7.3. Code Explanation
 * **Clear workspace and close all figures:**
   * clc; clears the command window.
   * clear; clears all variables in the workspace.
