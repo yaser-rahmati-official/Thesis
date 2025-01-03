@@ -40,7 +40,7 @@ Analyzes consumer reactions to _advertisements_, _products_, and _services_ for 
 ## 3. Action Units (AUs) and Universal Facial Expressions
 Action Units (AUs) are the building blocks of facial expressions in the _Facial Action Coding System_ (FACS) developed by _Paul Ekman_ and _Wallace V. Friesen_. AUs describe _the movement of individual facial muscles, and combinations of AUs correspond to universal facial expressions_. Below is a guide to understanding AUs in the context of the seven universal facial expressions:
 
-### 1. Anger
+### 3.1. Anger
 * **AU4:** Brow Lowerer (furrowing of the eyebrows)
 * **AU5:** Upper Lid Raiser (wide-open eyes)
 * **AU7:** Lid Tightener (tightened eyelids)
@@ -48,17 +48,17 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
 * **AU24:** Lip Pressor (tightened and pressed lips)
 * **AU17:** Chin Raiser (raised chin)
 
-### 2. Contempt
+### 3.2. Contempt
 * **AU14:** Dimpler (corner of the lip tightened and raised asymmetrically)
 * **AU12:** Lip Corner Puller (smirk-like movement, often asymmetric)
 
-### 3. Disgust
+### 3.3. Disgust
 * **AU9:** Nose Wrinkler (wrinkling of the nose)
 * **AU10:** Upper Lip Raiser (lifting the upper lip)
 * **AU16:** Lower Lip Depressor (pulling the lower lip down)
 * **AU4:** Brow Lowerer (furrowing the brow)
 
-### 4. Fear
+### 3.4. Fear
 * **AU1:** Inner Brow Raiser (inner part of the eyebrows raised)
 * **AU2:** Outer Brow Raiser (outer part of the eyebrows raised)
 * **AU4:** Brow Lowerer (slight furrowing of the brows)
@@ -66,17 +66,17 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
 * **AU20:** Lip Stretcher (corners of the lips stretched horizontally)
 * **AU25:** Lips Parted (mouth opened slightly)
 
-### 5. Happiness
+### 3.5. Happiness
 * **AU6:** Cheek Raiser (smiling with the eyes or "crow’s feet")
 * **AU12:** Lip Corner Puller (smile with upward movement of lip corners)
 
-### 6. Sadness
+### 3.6. Sadness
 * **AU1:** Inner Brow Raiser (inner eyebrows pulled upward)
 * **AU4:** Brow Lowerer (slightly furrowed eyebrows)
 * **AU15:** Lip Corner Depressor (corners of the lips pulled downward)
 * **AU17:** Chin Raiser (slight upward chin movement)
 
-### 7. Surprise
+### 3.7. Surprise
 * **AU1:** Inner Brow Raiser (eyebrows raised upward)
 * **AU2:** Outer Brow Raiser (outer part of the eyebrows raised)
 * **AU5:** Upper Lid Raiser (wide-open eyes)
@@ -90,23 +90,23 @@ Here is a rewritten and explained version of the equations in the image:
 
 ![The San Juan Mountains are beautiful!](/M.Eng/Image/002.png "San Juan Mountains")
 
-**1. Eye Openness:**
+**4.1. Eye Openness:**
 
 $$O_{e}=y_{3}-y_{2}$$
 
-**2. Eyebrow Height Relative to The Pupil of The Eye :**
+**4.2. Eyebrow Height Relative to The Pupil of The Eye :**
 
 $$H_{e}=y_{4}-y_{1}$$
 
-**3. Mouth Width:**
+**4.3. Mouth Width:**
 
 $$W_{me}=x_{5}-x_{6}$$
 
-**4. Mouth Openness:**
+**4.4. Mouth Openness:**
 
 $$O_{m}=x_{8}-x_{7}$$
 
-**5. Distance of Lower Lip to Chin:**
+**4.5. Distance of Lower Lip to Chin:**
 
 $$O_{m}=\frac{(y_{8}-y_{5})+(y_{8}-y_{6})}{2}$$
 
@@ -210,5 +210,5 @@ plot(x,y, 'o')
   * y = pos(:,2); extracts the y-coordinates of the landmarks (the second column of pos).
   * plot(x, y, 'o') plots the landmarks as circles on the image using the extracted x and y coordinates.
 
-### The Result
+### 7.4. The Result
 ![The San Juan Mountains are beautiful!](/M.Eng/Image/001.png "San Juan Mountains")
