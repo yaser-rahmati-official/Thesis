@@ -5,10 +5,10 @@
 Enhances the responsiveness of applications by adapting to users' emotional states, such as in _gaming_, _virtual assistants_, and _educational software_.
 
 **2. Mental Health Monitoring:**
-Supports the detection and monitoring of mental health conditions like depression, anxiety, and stress through emotional analysis.
+Supports the detection and monitoring of mental health conditions like _depression_, _anxiety_, and _stress_ through emotional analysis.
 
 **3. Behavioral Analysis:**
-Provides insights into user reactions in scenarios such as marketing, customer service, and public opinion research.
+Provides insights into user reactions in scenarios such as _marketing_, _customer service_, and _public opinion research_.
 
 **4. Surveillance and Security:** 
 Assists in identifying suspicious behavior or emotional distress in public spaces, enhancing safety and threat detection.
