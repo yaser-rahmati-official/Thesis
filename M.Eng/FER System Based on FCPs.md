@@ -106,3 +106,9 @@ Action Units (AUs) are the building blocks of facial expressions in the _Facial 
   * Organized by subject IDs (e.g., S001, S002), where each folder corresponds to a single subject.
   * Each subject folder contains subfolders for individual expression sequences, named sequentially (e.g., 001, 002).
   * Image sequences progress from a neutral expression to the peak expression.
+* **Emotion**
+  * Contains the emotion labels for the image sequences.
+  * Organized similarly to cohn-kanade-images, with subfolders for each subject and sequence.
+  * Each sequence folder contains a .txt file indicating the emotion label (e.g., 1 for anger, 6 for happiness).
+
+
