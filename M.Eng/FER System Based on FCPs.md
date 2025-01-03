@@ -335,7 +335,7 @@ for i=1:size(facs,1)
 end
 save('data_final1','feat','y');
 ```
-### 1. Initialization
+### 9.2. Initialization
 ```
 clc; clear; close all;
 load('Emotion');
@@ -345,3 +345,18 @@ count=1;
 * clc; clear; close all;: Clears the command window, removes all variables, and closes all figure windows.
 * load('Emotion') and load('total1'): Loads data files Emotion and total1 into the workspace. These files are assumed to contain the variables facs and emotion.
 * count=1;: Initializes a counter to track the rows in the output feature matrix feat.
+
+### 9.3. Outer Loops for Data Processing
+```
+for i=1:size(facs,1)
+    for j=1:size(facs,2)
+```
+* Loops iterate through the rows (i) and columns (j) of the facs matrix.
+### 9.4. Data Extraction
+```
+temp=facs(i,j,:);
+temp2=emotion{i,j};
+```
+* temp: Extracts a slice of the facs array corresponding to indices (i, j, :).
+* temp2: Retrieves the corresponding entry from the emotion cell array.
+
