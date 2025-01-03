@@ -151,7 +151,7 @@ $$O_{m}=\frac{(y_{8}-y_{5})+(y_{8}-y_{6})}{2}$$
   * Useful for FACS-based analysis and expression recognition tasks.
 
 ## 7. Identifying 68 FCPs For Each Image
-### 7.1. Source Code
+### 7.1. Matlab Source Code
 ```
 clc;
 clear ;
