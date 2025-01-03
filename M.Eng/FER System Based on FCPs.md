@@ -106,7 +106,7 @@ $$O_{m}=x_{8}-x_{7}$$
 
 **5. Distance of Lower Lip to Chin:**
 
-$$O_{m}=\frac{(y_{8}-y_{7})+(y_{8}-y_{6})}{2}}$$
+$$O_{m}=\frac{(y_{8}-y_{7})+(y_{8}-y_{6})}{2}$$
 
 ## 5. CK+ (Extended Cohn-Kanade Dataset)
 * The Extended Cohn-Kanade Dataset (CK+), a widely used dataset for Facial Expression Recognition (FER), includes the following _expression classes_:
