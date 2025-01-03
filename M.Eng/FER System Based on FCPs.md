@@ -275,8 +275,9 @@ _After completing these steps, compile a new, integrated dataset that includes i
 ### 8.5. Flowchart 
 ![The San Juan Mountains are beautiful!](/M.Eng/Image/003.png "Flowchart")
 
-## Feature Vector
+## 9. Feature Vector
 
+### 9.1. Matlab Source Code
 ```
 %feature extraction
 clc;
