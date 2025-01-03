@@ -1,4 +1,4 @@
-# Thesis
+# FER System Based on FCPs
 
 ## Applications of Facial Expression Recognition (FER) Systems
 **1. Human-Computer Interaction (HCI):** 
