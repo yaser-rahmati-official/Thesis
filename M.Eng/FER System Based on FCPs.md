@@ -37,6 +37,18 @@ _Assists individuals with disabilities_ in communication and interaction by tran
 **10. Market Research:** 
 Analyzes consumer reactions to _advertisements_, _products_, and _services_ for targeted improvements and campaign optimization.
 
+## Action Units (AUs) and Universal Facial Expressions
+Action Units (AUs) are the building blocks of facial expressions in the _Facial Action Coding System_ (FACS) developed by _Paul Ekman_ and _Wallace V. Friesen_. AUs describe the movement of individual facial muscles, and combinations of AUs correspond to universal facial expressions. Below is a guide to understanding AUs in the context of the seven universal facial expressions:
+
+### 1. Anger
+* AU4: Brow Lowerer (furrowing of the eyebrows)
+* AU5: Upper Lid Raiser (wide-open eyes)
+* AU7: Lid Tightener (tightened eyelids)
+* AU23: Lip Tightener (compressed lips)
+* AU24: Lip Pressor (tightened and pressed lips)
+* AU17: Chin Raiser (raised chin)
+
+
 ## CK+ (Extended Cohn-Kanade Dataset)
 * The Extended Cohn-Kanade (CK+) dataset contains:
   1. 593 video sequences
