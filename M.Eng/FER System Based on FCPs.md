@@ -87,9 +87,13 @@ The image shows a simplified face with key facial characteristic points (FCPs), 
 
 To model each FCP mathematically, let us define the coordinates of the relevant points. Assuming the face is symmetric about the vertical axis through , we can define each point relative to the origin.
 Here is a rewritten and explained version of the equations in the image:
-1. Eye Openness ():
-$$\int_a^b f(x) \,dx = F(b) - F(a)$$
+**1. Eye Openness:**
+$$O_{e}=y_{3}-y_{2}$$
 
+**2. Eyebrow Height Relative to Eye :**
+$$H_{e}=y_{3}-y_{1}$$
+**3. Mouth Width:**
+$$W_{me}=x_{5}-x_{6}$$
 
 ## 5. CK+ (Extended Cohn-Kanade Dataset)
 * The Extended Cohn-Kanade Dataset (CK+), a widely used dataset for Facial Expression Recognition (FER), includes the following _expression classes_:
