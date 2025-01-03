@@ -87,6 +87,7 @@ The image shows a simplified face with key facial characteristic points (FCPs), 
 
 To model each FCP mathematically, let us define the coordinates of the relevant points. Assuming the face is symmetric about the vertical axis through , we can define each point relative to the origin.
 Here is a rewritten and explained version of the equations in the image:
+
 **1. Eye Openness:**
 
 $$O_{e}=y_{3}-y_{2}$$
@@ -104,6 +105,7 @@ $$W_{me}=x_{5}-x_{6}$$
 $$O_{m}=x_{8}-x_{7}$$
 
 **5. Distance of Lower Lip to Chin:**
+
 $$O_{m}=\frac{(y_{8}-y_{7})+(y_{8}-y_{6})}{2}}$$
 
 ## 5. CK+ (Extended Cohn-Kanade Dataset)
