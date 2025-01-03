@@ -272,3 +272,6 @@ _After completing these steps, compile a new, integrated dataset that includes i
        * Load FACS labels
        * Process FACS data
        * Save to file facs.mat
+
+**8.5. Flowchart**
+![The San Juan Mountains are beautiful!](/M.Eng/Image/003.png "Flowchart")
