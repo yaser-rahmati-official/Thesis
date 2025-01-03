@@ -359,4 +359,79 @@ temp2=emotion{i,j};
 ```
 * temp: Extracts a slice of the facs array corresponding to indices (i, j, :).
 * temp2: Retrieves the corresponding entry from the emotion cell array.
+### 9.5. 4. Check for Empty Data
+```
+if(isempty(temp2)==1)
+    continue;
+end
+```
+* Skips the current iteration if temp2 is empty, indicating no valid data for this (i, j) combination.
+### 9.6. Inner Loop for Feature Extraction
+```
+qx=[]; qy=[];
+for k=1:length(temp)
+    temp1=temp{k};
+    if(isempty(temp1)==1)
+        break;
+    else
+        qx=[qx temp1(:,1)];
+        qy=[qy temp1(:,2)];
+    end
+end
+```
+* Initializes empty arrays qx and qy.
+* Iterates over the third dimension (k) of temp:
+  * If temp{k} is empty, exits the loop.
+  * Otherwise, extracts the first and second columns of temp{k} and appends them to qx and qy, respectively.
+### 9.7. Normalization
+```
+qx=(qx-min(qx(:)));
+qx=qx/max(qx(:));
+qy=(qy-min(qy(:)));
+qy=qy/max(qy(:));
+```
+* Normalizes qx and qy to a range of [0, 1] by:
+  * Subtracting the minimum value.
+  * Dividing by the range (maximum - minimum).
+### 9.8. Differentiation
+```
+qx1=diff(qx');
+qx1(:,1)=[];
+qx2=diff(diff(qx)');
+qxx=[qx1 ; qx2];
 
+qy1=diff(qy');
+qy1(:,1)=[];
+qy2=diff(diff(qy)');
+qyy=[qy1 ; qy2];
+```
+* Computes first and second-order differences for qx and qy:
+  * qx1 and qy1: First-order differences.
+  * qx2 and qy2: Second-order differences.
+* Combines results into qxx and qyy for further processing.
+### 9.9. Feature Importance Calculation
+```
+q2=qxx'.^2;
+q3=qyy'.^2;
+gg=sum(q2)+sum(q3);
+[~,q4]=sort(gg,'descend');
+q4=sort(q4(1:5));
+```
+* Squares the differences in qxx and qyy to calculate magnitudes.
+* Computes gg as the sum of squared differences.
+* Identifies the top 5 indices with the highest gg values, which are stored in q4.
+### 9.10. Feature Matrix Construction
+```
+q5=sqrt(q2(:,q4)+q3(:,q4));
+feat(count,:)=q5(:);
+y(count)=temp2;
+count=count+1;
+```
+*. Combines selected features from q2 and q3 (indexed by q4) and calculates their square root.
+*. Appends these features to the feat matrix as a row.
+*. Stores the corresponding emotion label (temp2) in the y array.
+### 9.11. Save Results
+```
+save('data_final1','feat','y');
+```
+* Saves the feat matrix (features) and y array (labels) to a file named data_final1.mat.
